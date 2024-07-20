@@ -62,7 +62,7 @@
               laptop: "1024px",
               // => @media (min-width: 1024px) { ... }
 
-              desktop: "1280px",
+              desktop: "1440px",
               // => @media (min-width: 1280px) { ... }
             },
           },
@@ -73,23 +73,23 @@
 
   <body class="bg-eggshell font-outfit">
     <article
-      class="w-1/2 phone:w-full phone:my-0 mx-auto rounded-lg bg-white my-20"
+      class="desktop:w-1/2 phone:w-full phone:my-0 mx-auto rounded-lg bg-white desktop:my-20"
     >
-      <header class="pt-8 px-8 phone:p-0">
+      <header class="desktop:pt-8 desktop:px-8 phone:p-0">
         <img
-          class="rounded-lg mb-6 phone:rounded-none"
+          class="desktop:rounded-lg mb-6 phone:rounded-none"
           src="./assets/images/image-omelette.jpeg"
           alt="omlette-img"
         />
 
         <h2
-          class="mb-4 font-bold text-3xl font-youngSerif phone:px-[40px] phone:w-full"
+          class="mb-4 font-bold text-3xl font-youngSerif desktop:p-0 phone:px-[40px] phone:w-full"
         >
           Simple Omelette Recipe
         </h2>
 
         <p
-          class="text-wengebrown font-medium text-[15px] phone:pl-[40px] phone:pr-[40px] phone:w-full"
+          class="text-wengebrown font-medium text-[15px] desktop:p-0 desktop:pr-8 desktop:pl-0 phone:px-[40px] phone:w-full"
         >
           An easy and quick dish, perfect for any meal. This classic omelette
           combines beaten eggs cooked to perfection, optionally filled with your
@@ -97,7 +97,7 @@
         </p>
       </header>
 
-      <main class="pt-8 px-8 pb-4 phone:px-[40px]">
+      <main class="pt-8 desktop:px-8 pb-4 phone:px-[40px]">
         <section class="bg-rosewhite p-7 mb-6">
           <h2 class="text-darkraspberry font-bold text-xl mb-4">
             Preparation time
@@ -219,28 +219,28 @@
             class="grid grid-cols-1 grid-rows-4 gap-2 justify-center items-center mt-4"
           >
             <div
-              class="border-b pb-2 mb-2 flex justify-between gap-8 pr-64 phone:pr-20"
+              class="border-b pb-2 mb-2 flex justify-between gap-8 desktop:pr-72 phone:pr-20"
             >
               <span class="pl-8 font-medium text-wengebrown">Calories</span>
               <span class="text-nutmeg font-semibold text-lg w-8">277kcal</span>
             </div>
 
             <div
-              class="border-b pb-2 mb-2 flex justify-between gap-8 pr-64 phone:pr-20"
+              class="border-b pb-2 mb-2 flex justify-between gap-8 desktop:pr-72 phone:pr-20"
             >
               <span class="pl-8 font-medium text-wengebrown">Carbs</span>
               <span class="text-nutmeg font-semibold text-lg w-8"> 0g</span>
             </div>
 
             <div
-              class="border-b pb-2 mb-2 flex justify-between gap-8 pr-64 phone:pr-20"
+              class="border-b pb-2 mb-2 flex justify-between gap-8 desktop:pr-72 phone:pr-20"
             >
               <span class="pl-8 font-medium text-wengebrown">Protein</span>
               <span class="text-nutmeg font-semibold text-lg w-8"> 20g</span>
             </div>
 
             <div
-              class="border-b pb-2 mb-2 flex justify-between gap-8 pr-64 phone:pr-20"
+              class="border-b pb-2 mb-2 flex justify-between gap-8 desktop:pr-72 phone:pr-20"
             >
               <span class="pl-8 font-medium text-wengebrown">Fat</span>
               <span class="text-nutmeg font-semibold text-lg w-8"> 22g</span>
@@ -251,7 +251,7 @@
     </article>
 
     <footer
-      class="text-center w-full text-nutmeg text-2xl p-8 h-fit phone:text-xs phone:p-4"
+      class="text-center w-full text-nutmeg desktop:text-2xl desktop:p-8 h-fit phone:text-xs phone:p-4"
     >
       Challenge by
       <a
